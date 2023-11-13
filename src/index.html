@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Coffe Shop</title>
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 logo-wrapper">
+            <a class="logo" href="#home"><h2>EL TIGRE</h2></a>
+            <p>VENEZUELA COFFEE BEANS</p>
+          </div>
+          <div class="col-6 navbar">
+            <ul class="nav justify-content-center main-nav" >
+              <li class="nav-item">
+                <a class="nav-link" href="#home">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">PRODUCT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-title">
+          <h1>HOME OF<br>ORIGINAL TASTES</h1>
+          <p>DISCOVER</p>
+          <a href="#product"><i class="icon-arrow" alt="arrow-piture"></i></a>
+        </div>
+      </div>
+    </section>
+    <main class="main pages">
+      <section id="home">
+        <section class="products">
+          <div class="container" data-container="productsContainer">
+          </div>
+        </section>
+        <section class="about-us">
+          <div class="wrapper">
+          </div>
+          <div class="container">
+            <h1>ABOUT US</h1>
+            <p>Who are we? Just a bunch of friends with a love for a good coffee
+                and desire to create something new, something original.</p>
+            <p>Our coffees reflect us - young, wild and free.
+                We are on the journey of new tastes...</p>
+            <p>Join us!</p>
+          </div>
+        </section>
+      </section>
+      <section id="product">
+        <div class="products">
+          <div class="container" data-container="productsContainer">
+          </div>
+        </div>
+      </section>
+      <section id="contact-us">
+        <div class="container">
+          <h1>CONTACT US</h1>
+          <form action="/action_page.php">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" value="">
+            <label for="title">TITLE</label>
+            <input type="text" id="title" name="title" value="">
+            <label for="message">MESSAGE</label>
+            <textarea row="3" type="text" id="message" name="message" value="">
+            </textarea>
+            <button type="submit" class="btn">SUBMIT</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2021 EL TIGRE inc.</p>
+    </footer>
+    <script id="template-products" type="text/x-handlebars-template">
+      <div class="section-header">
+        <h1>PRODUCTS</h1>
+      </div>
+      <div class="products">
+        {{#each data}}
+        <div class="row">
+          <div class="col-6 product-description">
+            <h2>{{title}}</h2>
+            <p>{{description}}</p>
+            <div>
+              <div class="row">
+                <div class="col-6">
+                  <p class="parameters">ROASTING: <span>{{roasting }}</span></p>
+                  <p class="parameters">INTENSITY: <span>{{intensity}}</span></p>
+                </div>
+                <div class="col-6">
+                  <img src="images/stamp.webp" class="stamp {{#if isPopular}}visible{{/if}}" alt="stamp">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 product"><img src= "{{image}}" alt="coffee-1">
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>

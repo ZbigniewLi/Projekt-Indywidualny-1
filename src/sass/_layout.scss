@@ -1,0 +1,395 @@
+/*---HEADER---*/
+
+.header {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+  
+    p {
+      font-size: 40px;
+      }
+    }
+  
+    .container {
+      margin: 0 auto;
+      padding: 0px;
+      max-width: 1200px;
+    }
+  
+    .row {
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+  
+  
+      h2 {
+        
+        font-size: 36px;
+        letter-spacing: 5px;
+       
+        margin:0 ;
+        text-align: left;
+      }
+  
+      p {
+        font-size: 14px;
+        margin: 0;
+        text-align: left;
+        letter-spacing: 3px;
+      }
+  
+      i {
+        font-size: 50px;
+        
+      }
+  
+      #ico {
+        font-size: 0;
+      }
+  
+      .logo {
+        text-decoration: none;
+  
+        :hover {
+          color: $main-color;
+          cursor: pointer;
+  
+        }
+      }
+    }
+  
+    .header h1{
+      text-indent: -40%;
+    }
+
+    .logo-wrapper {
+      flex-grow: 1;
+      color: $second-color;
+    }
+  
+    .main-title {
+      text-align: center;
+    }
+
+      h1 {
+        margin-top: 10%;
+        color: $main-color;
+        font-size: 75px;
+  
+      }
+  
+      h1::after {
+        display: block;
+        content: "";
+        margin: 46px auto 90px;
+        max-width: 270px;
+        height: 5px;
+        background-color: $main-color;
+      }
+  
+      p {
+        margin: 0;
+        font-size: 34px;
+        text-align: center;
+        margin-top: 70px;
+        color: $second-color;
+      }
+    
+      .icon-arrow {
+        font-size: 40px;
+        margin-bottom: 20px;
+        display: block;
+      }
+  
+  /*---NAVBAR---*/
+.logo{ 
+  color: $second-color;
+}
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .navbar {
+    margin-left: auto;
+}
+
+  .navbar ul {
+      margin-top: 45px;
+      display: flex;
+    }
+  
+    li {
+      display: inline;
+      margin-right: 30px;
+        padding-top: 15px;
+        display: block;
+      }
+  
+      a {
+        
+        color: $second-color;
+        font-size: 18px;
+        
+        text-decoration: none;
+        opacity: 70%;
+       
+          font-size: 0.875rem;
+          margin: 48px;
+      }
+  
+      a:hover {
+        color: $main-color;
+      }
+    
+  
+  
+  /*---ABOUT US---*/
+  
+  .wrapper {
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .about-us {
+    position: relative;
+    height: 550px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-image: url(../images/about-us.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+  
+    .container {
+      max-width: 780px;
+      height: 550px;
+      margin: 0 auto;
+  
+      h1 {
+        padding: 50px 0 0 0;
+        position: relative;
+        z-index: 2;
+        text-align:center;
+      }
+  
+      p {
+        font-size: 24px;
+        text-align: left;
+        position: relative;
+        margin: 40px 160px 40px 100px;
+        z-index: 2;
+        
+      }
+  
+      p:last-of-type {
+        text-align: right;
+        margin: auto;
+        padding-right: 40px;
+      }
+  
+      h1::after {
+        display: block;
+        content: "";
+        margin: 46px auto 90px;
+        max-width: 500px;
+        height: 5px;
+        background-color: $main-color;
+      }
+    }
+  }
+  
+  /*---FOOTER---*/
+  
+  footer {
+    height: 56px;
+    display: flex;
+  
+    p {
+      
+      font-size: 15px;
+      
+      margin: auto;
+    }
+  }
+
+ 
+
+  #contact-us {
+    padding: 30px;
+    text-align: center;
+    font-family: $main-font;
+    font-size: 36px;
+    margin: 0 auto;
+ 
+  
+    label {
+      display: block;
+    }
+
+    input, textarea{
+      padding: 6px;
+      border: 3px solid $main-color;
+    }
+  }
+  
+  button {
+    display: block;
+    font-size: 30px;
+    font-stretch: expanded;
+    font-weight: bold;
+    background-color: $main-color;
+    color: $second-color;
+    height: 80px;
+    width: 200px;
+    border: none;
+    letter-spacing: 4px;
+    margin: 0 auto;
+    cursor: pointer;
+
+  
+    :hover {
+      color: $third-color;
+    }
+  }
+  
+
+  /*--PRODUCTS---*/
+
+.products {
+  font-family: $main-font;
+
+  .section-header h1{
+    text-align: center;
+    text-indent: 0px;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 32px;
+    margin: 38px 0 0 0;
+  }
+
+  h2::after {
+    display: block;
+    content: "";
+    margin: 38px 0 0 0;
+    max-width: 110px;
+    height: 5px;
+    background-color: $main-color;
+  }
+
+  p {
+    font-size: 14px;
+    color: $third-color;
+    line-height: 30px;
+    padding-left: 130px;
+    margin-top: -15px;
+  }
+
+  .row {
+    display: flex;
+
+    .col-6{
+      flex: 0 0 50%;
+    }
+
+    &:nth-of-type(2n){
+      flex-direction: row-reverse;
+    }
+  }
+
+  .container .row h1 {
+    padding: 96px 0 0 0;
+    text-align: center;
+  }
+
+  .stamp {
+    margin: 0 50px 50px 0;
+    visibility: hidden;
+  }
+}
+
+.row {
+  .parameters {
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 20px 0;
+   
+    span {
+      color: $main-color;
+    }
+  }
+
+  .visible {
+    visibility: visible;
+    box-shadow: none;
+  }
+}
+
+.product {
+  img {
+    margin: 0;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+}
+
+.pages .hidden {
+  display:none;
+}
+
+
+@media (max-width:768px){
+  .header h1{
+    text-indent: 0;
+    font-size: 22px;
+
+  }
+
+  h1{
+    font-size: 22px;
+  }
+
+  .products .row .col-6{
+    flex: 0 0 100%;
+  }
+
+  .navbar ul{
+    flex-direction: column;
+  }
+
+  .navbar {
+    margin-right: auto;
+  }
+
+  .about-us .container p{
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  button{
+    font-size: 20px;
+    height: 40px;
+  }
+
+  #contact-us{
+    font-size: 17px;
+    
+  }
+}
